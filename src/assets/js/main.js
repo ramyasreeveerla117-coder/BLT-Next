@@ -442,25 +442,21 @@ function setupEventHandlers() {
     // Theme Toggle
     const themeToggle = document.getElementById('themeToggle');
     const themeToggleMobile = document.getElementById('themeToggleMobile');
-
-const sunIcon = document.getElementById('sunIcon');
-const moonIcon = document.getElementById('moonIcon');
-
 const sunIconMobile = document.getElementById('sunIconMobile');
 const moonIconMobile = document.getElementById('moonIconMobile');
 
     function updateThemeIcons() {
     const isDark = document.documentElement.classList.contains('dark');
 
-    if (sunIcon && moonIcon) {
-        sunIcon.classList.toggle('hidden', isDark);
-        moonIcon.classList.toggle('hidden', !isDark);
-    }
+if (sunIcon && moonIcon) {
+    sunIcon.classList.toggle('hidden', isDark);
+    moonIcon.classList.toggle('hidden', !isDark);
+}
 
-    if (sunIconMobile && moonIconMobile) {
-        sunIconMobile.classList.toggle('hidden', isDark);
-        moonIconMobile.classList.toggle('hidden', !isDark);
-    }
+if (sunIconMobile && moonIconMobile) {
+    sunIconMobile.classList.toggle('hidden', isDark);
+    moonIconMobile.classList.toggle('hidden', !isDark);
+}
 }
 
     if (themeToggle) {
